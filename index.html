@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scrabble</title>
+
+	<link rel="stylesheet" type="text/css" href="ressources/style/style.css">
+
+</head>
+	<body>
+
+<header>
+
+<h1>Game of scrabble</h1>
+
+	<fieldset id="field_settings">
+	<legend>Settings</legend>
+	
+	<span id="close_setting" class="close" name="tab_setting">x</span>
+
+	<div id="content_settings">
+		<br/>
+
+		<label>Nbr of players</label>
+		<select name="nbr_player" id="nbr_player">
+		  <option value="2" selected="selected">2</option>
+		  <option value="3">3</option>
+		  <option value="4">4</option>
+		</select>
+		<br/>
+		<span id="disp_ask_name_user">
+			<p>
+				<label>Name J1 : </label><input type="text" id="player1_name" name="player1_name" value="player1" ><br/>	
+			</p>
+			<p>
+				<label>Name J2 : </label><input type="text" id="player2_name" name="player2_name" value="player2" ><br/>	
+			</p>
+
+		</span>
+
+		<button type="submit" name="start_game_button" id="start_game_button">Start game</button>
+	</div>
+
+	</fieldset>
+
+
+</header>
+
+<nav>
+
+<div class="div_for_button">
+	<button id="get_rules">Get the rules</button>
+</div>
+
+	
+
+
+<div id="set_values">
+<fieldset>
+<legend>Set word</legend>
+	<label>Word to put</label><br/>
+	<input type="text" id="from_user_word" name="from_user_word" value=""><br/>
+
+	<label>Row where the world start </label><br/>
+	<input type="number" id="from_user_row" name="from_user_row" value="" min="1" max="15"><br/>
+
+	<label>Column where the world start </label><br/>
+	<input type="number" id="from_user_col" name="from_user_col" value="" min="1" max="15"><br/>
+
+	<label>Direction</label><br/>
+	<select name="from_user_dir" id="from_user_dir" class="direction">
+
+		<option value="1">Up</option>
+		<option value="2">Right</option>
+		<option value="3">Bottom</option>
+		<option value="4">Left</option>
+
+	</select>
+
+	<br/><br/>
+
+	<button id="propose_word">Proposer the word </button><br/>
+	<button id="reset_hand_user">Get new tilds</button><br/>
+	<button id="skip_turn">Skip my turn</button>
+
+
+</fieldset>
+</div>
+
+
+
+<div id="user_hand"></div>
+
+
+<fieldset>
+<legend>Current hand</legend>
+<span id="current_hand"></span>
+
+
+<span id="play_a_gif"></span>
+
+
+</fieldset>
+
+
+
+<!-- <fieldset id="field_displaydata">
+<legend>Display data</legend>
+<span id="close_data" class="close" name="tab_all_user">x</span>
+
+
+<span id="all_users"></span>
+</fieldset>
+ -->
+
+
+
+
+<span id="display_info"></span>
+
+</nav>
+
+<pre>
+<div id="displayBoardTable"></div>
+</pre>
+
+
+<span id="display_void"></span>
+
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <fieldset class="modal-content">
+    <span class="close close_modal">x</span>
+    <span id="modal_content">
+    	
+    </span>
+
+</fieldset>
+</div>
+
+
+
+
+<script type="text/javascript" src="ressources/script/script.js"></script>
+<script type="text/javascript" src="ressources/script/modal.js"></script>
+
+</body>
+
+<footer>
+	All rights reserved to Paul Hubert
+
+
+</footer>
+
+
+</html>
